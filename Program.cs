@@ -17,18 +17,12 @@ namespace Project2FortuneTeller
 
         }
 
-        static void theFortuneTeller()
-        {
-            Console.WriteLine("I am just a fortune teller, do not entrust your future to me!");
-        }
-
         static void Main(string[] args)
         {
             string firstName, lastName, coloR;
 
             while (true)
             {
-
 
 
 
@@ -207,8 +201,11 @@ namespace Project2FortuneTeller
                             Console.WriteLine("You will have a vacation home in Afghanistan");
                         }
 
-                        Console.WriteLine(retire);
+                        Console.WriteLine("You will retire in " + retire + "years");
+                        fortuneTellerSays();
                         break;
+
+
                     }
                 }
             }
@@ -261,7 +258,7 @@ namespace Project2FortuneTeller
             return location;
         }
 
-        
+
 
         static string coloRTransport(string coloR)
         {
@@ -304,6 +301,10 @@ namespace Project2FortuneTeller
             return coloR;
         }
 
-      
-            }
+        static void fortuneTellerSays()
+        {
+            Console.WriteLine("I am just a fortune teller, do not entrust your future to me!");
+
+        }
     }
+}
